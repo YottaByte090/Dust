@@ -18,7 +18,6 @@ namespace Dust
             window.SetVerticalSyncEnabled(true);
             window.SetFramerateLimit(60);
 
-            currentScene.Init();
 
             while (window.IsOpen)
             {
@@ -34,6 +33,12 @@ namespace Dust
 
                 window.Display();
             }
+        }
+
+        public static void SetScene(Scene scene)
+        {
+            currentScene = scene;
+            scene.Init();
         }
     }
 }

@@ -56,11 +56,13 @@
     <Compile Include="Engine\DrawableList.cs" />
     <Compile Include="Dust.cs" />
     <Compile Include="Engine\Scene.cs" />
-    <Compile Include="Scenes\MainScene.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Scenes\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
