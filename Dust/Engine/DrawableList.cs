@@ -1,8 +1,10 @@
 ﻿using SFML.Graphics;
+using System;
 using System.Collections.Generic;
 
 namespace Dust.Engine
 {
+
     class DrawableList
     {
         private Dictionary<string, int> ids = new Dictionary<string, int>();
@@ -14,7 +16,7 @@ namespace Dust.Engine
             drawables.Add(drawable);
         }
 
-        public Drawable Get(string name)
+        public Drawable GetDrawable(string name)
         {
             if (ids.ContainsKey(name))
             {
@@ -25,6 +27,7 @@ namespace Dust.Engine
                 return null;
             }
         }
+
 
         public Drawable[] GetAll()
         {

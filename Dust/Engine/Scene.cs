@@ -1,4 +1,5 @@
 ﻿using SFML.Graphics;
+using SFML.Window;
 
 namespace Dust.Engine
 {
@@ -9,5 +10,8 @@ namespace Dust.Engine
         abstract public void Init();
         abstract public void Update();
         abstract public DrawableList GetDrawables();
+        abstract public void MouseButtonPressed(object sender, MouseButtonEventArgs e);
+        abstract public void MouseButtonReleased(object sender, MouseButtonEventArgs e);
+
     }
 }
