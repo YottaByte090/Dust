@@ -9,9 +9,8 @@ namespace Dust
     class Dust
     {
         private static RenderWindow window = new RenderWindow(new VideoMode(1024, 576), "Dust", Styles.Titlebar | Styles.Close);
-        private static Scene currentScene;
+        private static Scene currentScene = null;
 
-        private static bool isAlive = true;
         public static int x = 0, y = 0;
 
         static void Main(string[] args)
@@ -27,7 +26,7 @@ namespace Dust
 
             currentScene.Init();
 
-            while (isAlive)
+            while (window.IsOpen)
             {
                 window.DispatchEvents();
                 window.Clear();
@@ -45,7 +44,6 @@ namespace Dust
 
         static void Event_Closed(object sender, EventArgs e)
         {
-            isAlive = false;
             window.Close();
         }
 
