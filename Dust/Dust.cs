@@ -16,6 +16,8 @@ namespace Dust
 
         static void Main(string[] args)
         {
+            window.Closed += Window_Closed;
+
             window.SetVerticalSyncEnabled(true);
             window.SetFramerateLimit(60);
 
@@ -41,6 +43,11 @@ namespace Dust
         {
             currentScene = scene;
             scene.Init();
+        }
+
+        private static void Window_Closed(object sender, EventArgs e)
+        {
+            window.Close();
         }
     }
 }
