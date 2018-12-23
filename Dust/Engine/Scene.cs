@@ -1,6 +1,6 @@
 ﻿using SFML.Graphics;
 
-namespace Dust
+namespace Dust.Engine
 {
     abstract class Scene
     {

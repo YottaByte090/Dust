@@ -1,7 +1,7 @@
 ﻿using SFML.Graphics;
 using System.Collections.Generic;
 
-namespace Dust
+namespace Dust.Engine
 {
     class DrawableList
     {

@@ -1,8 +1,7 @@
-﻿using SFML.Graphics;
+﻿using System;
+using SFML.Graphics;
 using SFML.Window;
-using System;
-using System.Collections.Generic;
-using System.Windows.Forms;
+using Dust.Engine;
 
 namespace Dust
 {
