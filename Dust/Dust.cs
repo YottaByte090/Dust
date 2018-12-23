@@ -2,6 +2,7 @@
 using SFML.Graphics;
 using SFML.Window;
 using Dust.Engine;
+using Dust.Scenes;
 
 namespace Dust
 {
@@ -18,6 +19,7 @@ namespace Dust
             window.SetVerticalSyncEnabled(true);
             window.SetFramerateLimit(60);
 
+            SetScene(new BlankScene());
 
             while (window.IsOpen)
             {
